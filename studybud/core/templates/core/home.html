@@ -9,7 +9,7 @@
         {% for room in rooms %}
         <div>
             <h5>
-                {{data.id}} -- <a href="/screen/{{data.id}}"></a>{{data.name}}
+                {{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a>
             </h5>
         </div>
         {% endfor %}
